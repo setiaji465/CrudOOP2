@@ -41,7 +41,7 @@ class MainActivity : AppCompatActivity() {
 
     private fun setupView (){
         supportActionBar!!.apply {
-            title = "Ca"
+            title = "crud"
         }
     }
 
@@ -89,7 +89,7 @@ class MainActivity : AppCompatActivity() {
     private fun deleteAlert(note: Note){
         val dialog = AlertDialog.Builder(this)
         dialog.apply {
-            setTitle("Konfirmasi H")
+            setTitle("Konfirmasi Hapus")
             setMessage("Yakin hapus ${note.title}?")
             setNegativeButton("Batal") { dialogInterface, i ->
                 dialogInterface.dismiss()

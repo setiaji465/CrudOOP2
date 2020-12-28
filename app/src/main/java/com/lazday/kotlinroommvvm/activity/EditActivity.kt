@@ -28,18 +28,18 @@ class EditActivity : AppCompatActivity() {
         supportActionBar!!.setDisplayHomeAsUpEnabled(true)
         when (intentType()) {
             Constant.TYPE_CREATE -> {
-                supportActionBar!!.title = "BUAT BARU"
+                supportActionBar!!.title = "Buat Baru"
                 button_save.visibility = View.VISIBLE
                 button_update.visibility = View.GONE
             }
             Constant.TYPE_READ -> {
-                supportActionBar!!.title = "BACA"
+                supportActionBar!!.title = "Baca"
                 button_save.visibility = View.GONE
                 button_update.visibility = View.GONE
                 getNote()
             }
             Constant.TYPE_UPDATE -> {
-                supportActionBar!!.title = "EDIT"
+                supportActionBar!!.title = "Edit"
                 button_save.visibility = View.GONE
                 button_update.visibility = View.VISIBLE
                 getNote()
